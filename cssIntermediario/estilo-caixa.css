@@ -1,0 +1,16 @@
+/*.conteudo{
+    border: 1px solid blue;
+    padding: 20px;
+    margin: 10px;
+    width: 150px;
+}*/
+
+#noticia{
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2{
+    margin: 0px;
+}

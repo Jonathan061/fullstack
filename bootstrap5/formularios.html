@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap - Formulários</title>
+</head>
+<body>
+    <form>
+        <div class="mb-3">
+            <label for="usuario">Usuário</label>
+            <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
+        </div>
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+        <div class="mb-3">
+            <label for="estados">Estados</label>
+            <select class="form-select" name="estados" id="estados">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" name="mensagem" id="mensagem" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control" type="file" name="arquivo" id="arquivo">
+        </div>
+        <div class="mb-3">
+            <label for="range">Satisfação</label>
+            <input class="form-range" type="range" name="range" id="range" min="1" max="5">
+        </div>
+        <input class="btn btn-primary" type="submit" value="Salvar">
+    </form>
+    <br><br>
+
+    <form class="mb-3">
+        <input class="form-control-sm me-2" type="text" placeholder="Digite seu usuário">
+        <input class="form-input form-control-sm me-1" type="password" placeholder="Digite sua senha">
+        <input class="btn btn-primary" type="submit" value="Logar">
+    </form>
+
+    <form>
+        <div class="mb-3">
+            <label for="email">Email</label>
+            <input class="form-control is-valid" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            <div class="valid-feedback">
+                Email válido
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="senha">Senha</label>
+            <input class="form-control is-invalid" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Logar">
+    </form>
+
+    <!--JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

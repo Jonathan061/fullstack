@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap - Barra de Navegação</title>
+</head>
+<body>
+    <h2>Navegação simples / Abas</h2>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disable" href="">Contato</a>
+        </li>
+    </ul>
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="">Home</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disable" href="">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" href="">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Barra de navegação com formulários</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavForm">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavForm">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" href="">Contato</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar... ">
+                <button class="btn btn-outline-success">OK</button>
+            </form>
+        </div>
+    </nav>
+
+    <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Sobre 1</a></li>
+                        <li><a class="dropdown-item" href="">Sobre 2</a></li>
+                        <li><a class="dropdown-item" href="">Sobre 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disable" href="">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning">
+        <a class="navbar-brand" href="">Home</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disable" href="">Contato</a>
+            </li>
+        </ul>
+    </nav>    
+    
+    <h2>Alinhamentos</h2>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Home</a>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disable" href="">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed porttitor nunc. Nam quis mollis tellus. Vivamus facilisis dolor eget efficitur dictum. Duis risus purus, congue vitae mi sit amet, sagittis fringilla nibh. Vivamus consectetur eget lacus vel imperdiet. Etiam maximus ante eget risus rutrum, eget sagittis est venenatis.</p>
+
+    <!--JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

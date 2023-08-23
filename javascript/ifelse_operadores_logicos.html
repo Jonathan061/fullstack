@@ -1,0 +1,30 @@
+</html> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Operadores Lógicos</title>
+    <script>
+        var nota = parseInt(prompt('Digite a nota do aluno:'))
+        var media = 7
+        var faltas = parseInt(prompt('Digite o número de faltas:'))
+        var maxFaltas = 15 
+
+        if(nota >= media && maxFaltas >= faltas) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
+
+        //operador ternário
+
+        var resultado = nota >= media && maxFaltas >= faltas ? 'Aprovado' : 'Reprovado'
+
+        document.write(resultado)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 

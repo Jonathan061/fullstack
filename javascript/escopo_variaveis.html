@@ -1,0 +1,35 @@
+</html> 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Escopo de variáveis</title>
+    <script>
+        //3 escopos: global, função, bloco
+
+        //global que pode ser acessada em bloco e função
+        var serie = 'Peaky Blinders' 
+
+        //escopo de bloco
+        if(true){
+            //pode ser acessada globalmente sofre hoisting(elevação) para o escopo global
+            var serie2 = 'Game of Thrones'
+            document.write(serie + '<br>')
+        }
+
+        document.write(serie2 + '<br>')
+
+        function x(){
+            //não pode ser acessada globalmente
+            var serie3 = 'The Walking Dead' 
+            document.write(serie + '<br>')
+            document.write(serie2 + '<br>')            
+        }
+        x()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
